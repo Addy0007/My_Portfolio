@@ -1,0 +1,94 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for the body */
+body {
+    background: #080808;
+    color: #fff;
+}
+
+/* Styling for the header */
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('Images/Main_Back.png'); /* Add your image URL here */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns items to the left */
+    width: 100%;
+    position: relative;
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Logo */
+.logo {
+    width: 140px;
+}
+
+/* Navigation Menu */
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+/* Navigation Menu Items */
+nav ul li {
+    list-style: none;
+}
+
+/* Navigation Menu Links */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+/* Red line animation on hover */
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: width 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Header text styling */
+.header-text {
+    align-self: flex-start; /* Positions text to the left */
+    margin-top: 50px;
+    font-size: 30px;
+    max-width: 400px; /* Keeps text width contained */
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 10px;
+    white-space: nowrap; /* Prevents wrapping */
+}
