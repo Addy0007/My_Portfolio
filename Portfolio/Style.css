@@ -215,23 +215,34 @@ nav ul li a:hover::after{
     text-align: center;
     font-size: 14px;
    transition: height 0.5s;
+  
 }
 .layer h3{
     font-weight: 500;
     margin-bottom: 20px;
 }
-.layer a{
+.layer a {
     margin-top: 20px;
-    color: #ff004f;
+    color: #ff004f; /* Icon color */
     text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: #fff;
+    font-size: 24px; /* Size of the GitHub icon */
+    line-height: 60px; /* Centers icon vertically */
+    background: #fff; /* White circular background */
     width: 60px;
     height: 60px;
     border-radius: 50%;
     text-align: center;
+    display: inline-flex; /* Center icon */
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
 }
+
+.layer a:hover {
+    background: #ff004f; /* Change background on hover */
+    color: #fff; /* Change icon color on hover */
+}
+
 .work:hover img{
     transform: scale(1.1);
 }
